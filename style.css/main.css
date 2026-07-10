@@ -245,6 +245,21 @@ h2{
 .pro{
     background-color: #0D1B2A;
 }
+.pro-section-card {
+  position: relative;
+}
+.pro-section-card::before{
+ content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 150px;
+  background: radial-gradient(ellipse, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+
+}
 .team{
     background-color: #F8F9FB;
 }
@@ -341,29 +356,6 @@ h2{
    ============================================ */
 
 /* --- CSS Variables --- */
-:root {
-  --color-bg: #000000;
-  --color-card: #121214;
-  --color-card-border: rgba(255, 255, 255, 0.08);
-  --color-text: #ffffff;
-  --color-text-muted: #9ca3af;
-  --color-accent: #3b82f6;
-  --color-accent-light: #60a5fa;
-  --color-accent-glow: rgba(59, 130, 246, 0.35);
-
-  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  --radius-card: 28px;
-  --radius-sm: 12px;
- 
-  --padding-card: 28px;
-  --max-width: 1100px;
-}
-
-
-
-
-
-
 
 img,
 svg {
@@ -377,7 +369,7 @@ svg {
   background: none;
 }
 
-/* --- Page Layout --- */
+/* ---  Layout --- */
 .why-attend {
   display: flex;
   flex-direction: column;
@@ -406,21 +398,18 @@ svg {
   margin: 0 auto;
 }
 
-/* --- Why Attend Section --- */
-
-
-/* --- Bento Grid --- */
-.bento-grid {
+/* --- attend Grid --- */
+.attend-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* --- Bento Card (shared) --- */
-.bento-card {
+/* --- attend Card (shared) --- */
+.attend-section-card {
   background: #121214;
   border: 1px solid rgba(255, 255, 255, 0.08);;
-  border-radius: var(--radius-card);
+  border-radius: 30px;
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -429,11 +418,11 @@ svg {
   transition: border-color 0.25s ease;
 }
 
-.bento-card:hover {
+.attend-section-card:hover {
   border-color: blue;
 }
 
-.bento-card--ecosystem {
+.attend-section-card--networking {
   grid-column: span 2;
 }
 
@@ -465,13 +454,13 @@ svg {
 
 
 /* --- Leader Card --- */
-.bento-card--workflow .card-visual {
+.attend-section-card--leader .card-visual {
   align-items: flex-start;
   justify-content: center;
   padding-top: 8px;
 }
 
-.bento-card--workflow::before {
+.attend-section-card--leader::before {
   content: '';
   position: absolute;
   top: 0;
@@ -483,41 +472,41 @@ svg {
   pointer-events: none;
 }
 
-.workflow-notification {
+.leader-notification {
   display: flex;
   align-items: center;
   gap: 14px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-sm);
+  border-radius: 10px;
   padding: 14px 18px;
   backdrop-filter: blur(8px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-.workflow-notification__icon {
+.leader-notification-icon {
   width: 36px;
   height: 36px;
   flex-shrink: 0;
 }
 
-.workflow-notification__icon svg {
+.leader-notification-icon svg {
   width: 100%;
   height: 100%;
 }
-.workflow-notification__content{
+.leader-notification-content{
     color: white;
 }
 
 
 
 
-/* --- Tech Ecosystem Card --- */
-.bento-card--ecosystem .card-visual {
+/* --- Global networking Card --- */
+.attend-section-card--networking .card-visual {
   min-height: 180px;
 }
 
-.bento-card--ecosystem::before {
+.attend-section-card--networking::before {
   content: '';
   position: absolute;
   top: 20%;
@@ -553,7 +542,7 @@ svg {
 
 .hex--logo {
   background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 20px var(--color-accent-glow);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
 }
 
 .hex--logo svg {
@@ -566,12 +555,12 @@ svg {
 .hex--kotlin { box-shadow: 0 0 24px rgba(127, 82, 255, 0.3); }
 .hex--flutter { box-shadow: 0 0 24px rgba(84, 197, 248, 0.3); }
 
-/* --- AI Solutions Card --- */
-.bento-card--ai .card-visual {
+/* --- AI  Card --- */
+.attend-section-card--ai .card-visual {
   min-height: 180px;
 }
 
-.bento-card--ai::before {
+.attend-section-card--ai::before {
   content: '';
   position: absolute;
   top: 15%;
@@ -579,7 +568,7 @@ svg {
   transform: translateX(-50%);
   width: 180px;
   height: 180px;
-  background: radial-gradient(circle, var(--color-accent-glow) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -592,19 +581,19 @@ svg {
   justify-content: center;
 }
 
-.ai-ripple__ring {
+.ai-ripple-ring {
   position: absolute;
   border: 1.5px solid rgba(59, 130, 246, 0.4);
   border-radius: 16px;
   box-shadow: 0 0 12px rgba(59, 130, 246, 0.15);
 }
 
-.ai-ripple__ring--1 { width: 56px; height: 56px; opacity: 1; }
-.ai-ripple__ring--2 { width: 76px; height: 76px; opacity: 0.7; }
-.ai-ripple__ring--3 { width: 96px; height: 96px; opacity: 0.45; }
-.ai-ripple__ring--4 { width: 116px; height: 116px; opacity: 0.25; }
+.ai-ripple-ring--1 { width: 56px; height: 56px; opacity: 1; }
+.ai-ripple-ring--2 { width: 76px; height: 76px; opacity: 0.7; }
+.ai-ripple-ring--3 { width: 96px; height: 96px; opacity: 0.45; }
+.ai-ripple-ring--4 { width: 116px; height: 116px; opacity: 0.25; }
 
-.ai-ripple__core {
+.ai-ripple-core {
   position: relative;
   z-index: 1;
   width: 48px;
@@ -618,38 +607,38 @@ svg {
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--color-text);
+  color: white;
   box-shadow: 0 0 24px rgba(59, 130, 246, 0.3);
 }
 
-/* --- Analytics Card --- */
-.bento-card--analytics .card-visual {
+/* --- career growth Card --- */
+.attend-section-card--career .card-visual {
   min-height: 160px;
   padding: 0 8px;
 }
 
-.analytics-chart {
+.career {
   position: relative;
   width: 100%;
   height: 120px;
 }
 
-.analytics-chart__grid,
-.analytics-chart__line {
+.career-grid,
+.career-line {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
-/* --- Design Card --- */
-.bento-card--design .card-visual {
+/* --- Hands-on labs Card --- */
+.attend-section-card--labs .card-visual {
   align-items: flex-start;
   justify-content: center;
   padding-top: 12px;
 }
 
-.bento-card--design::before {
+.attend-section-card--labs::before {
   content: '';
   position: absolute;
   top: 10%;
@@ -661,97 +650,46 @@ svg {
   pointer-events: none;
 }
 
-.design-dialog {
+.handson-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-sm);
+  border-radius: 10px;
   padding: 20px 22px 16px;
   width: 100%;
   max-width: 240px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
-.design-dialog__title {
+.handson-card-title {
   font-size: 0.9375rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.design-dialog__desc {
+.handson-card-desc {
   font-size: 0.8125rem;
-  color: var(--color-text-muted);
+  color:#9ca3af;
   margin-bottom: 18px;
   line-height: 1.5;
 }
 
-.design-dialog__actions {
+.handson-card-actions {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
 }
 
-.design-dialog__btn {
+.handson-card-btn {
   font-size: 0.8125rem;
-  color: var(--color-text-muted);
+  color: #9ca3af;
   padding: 4px 0;
   transition: color 0.2s;
-}
-
-.design-dialog__btn:hover {
-  color: var(--color-text);
-}
-
-.design-dialog__btn--bold {
-  color: var(--color-accent);
+  color: #1D4ED8;
   font-weight: 600;
 }
 
-.design-dialog__btn--bold:hover {
-  color: var(--color-accent-light);
-}
-
-/* --- Responsive --- */
-@media (max-width: 900px) {
-  .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .bento-card--ecosystem {
-    grid-column: span 2;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 40px 16px 60px;
-  }
-
-  .section-header {
-    margin-bottom: 32px;
-  }
-
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bento-card--ecosystem {
-    grid-column: span 1;
-  }
-
-  .hex-grid {
-    grid-template-columns: repeat(4, 44px);
-    grid-template-rows: repeat(3, 40px);
-  }
-
-  .hex {
-    width: 44px;
-    height: 40px;
-  }
-
-  .hex--logo svg {
-    width: 18px;
-    height: 18px;
-  }
+.handson-card-btn:hover {
+  color: gray;
 }
 
 
