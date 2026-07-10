@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
+     <!-- Font Awesome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      />
   </head>
   <body>
     <!-- navbar -->
@@ -60,9 +66,9 @@
           <div class="speaker">
             <img src="./assets/andrej.png" alt="speaker pic" />
             <div class="speaker-details">
-              <p>AI / ML</p>
+              <p class="category">AI / ML</p>
               <h2>Andrej Karpathy</h2>
-              <p>Pretraining team, Anthropic</p>
+              <p class="dec">Pretraining team, Anthropic</p>
             </div>
           </div>
           <div class="speaker">
@@ -70,7 +76,7 @@
             <div class="speaker-details">
               <p class="category">CLOUD & DEVOPS</p>
               <h2>Demis Hassabis</h2>
-              <p>Co-Founder and CEO, Google DeepMind</p>
+              <p class="dec">Co-Founder and CEO, Google DeepMind</p>
             </div>
           </div>
           <div class="speaker">
@@ -78,7 +84,7 @@
             <div class="speaker-details">
               <p class="category">FRONTEND</p>
               <h2>Gary Marcus</h2>
-              <p>Staff Enginner, Vercel</p>
+              <p class="dec">Staff Enginner, Vercel</p>
             </div>
           </div>
           <div class="speaker">
@@ -86,12 +92,14 @@
             <div class="speaker-details">
               <p class="category">SECURITY</p>
               <h2>Mustafa Suleyman</h2>
-              <p>CEO of Microsoft AI</p>
-              iv>
+              <p class="dec">CEO of Microsoft AI</p>
+              
             </div>
           </div>
         </div>
       </section>
+
+      <!-- price section -->
       <section class="secure-sec">
         <!-- section name   -->
         <div class="section-secure">
@@ -103,9 +111,9 @@
         <div class="upgrade-app">
           <div class="price">
             <div class="price-top">
-              <p>STANDARD</p>
+              <p class="para">STANDARD</p>
               <h1 class="dolar">$399</h1>
-              <p>per person</p>
+              <p class="para">per person</p>
             </div>
 
             <ul class="price-middle">
@@ -123,14 +131,14 @@
           </div>
 
           <!-- Pro version -->
-          <div class="price pro">
-            <div class="price-top pro">
-              <p>PRO</p>
-              <h1 >$749</h1>
-              <p>per person</p>
+          <div class="price text-color pro">
+            <div class="price-top ">
+              <p class="bluetext">PRO</p>
+              <h1>$749</h1>
+              <p >per person</p>
             </div>
 
-            <ul class="price-middle pro">
+            <ul class="price-middle  pro">
               <li>Everything in Standard</li>
               <li>Unlimited workshop access</li>
               <li>Speaker meet & greet</li>
@@ -145,9 +153,9 @@
 
           <div class="price team">
             <div class="price-top">
-              <p>TEAM</p>
+              <p class="para">TEAM</p>
               <h1 class="dolar">$5,999</h1>
-              <p>up to 10 people</p>
+              <p class="para">up to 10 people</p>
             </div>
 
             <ul class="price-middle">
@@ -164,6 +172,170 @@
           </div>
         </div>
       </section>
+
+      <!-- Why Attend Devconf 2026 section -->
+
+   
+    <section class="why-attend">
+      <div class="section-header">
+        <h1 class="section-title">Why Attend</h1>
+        <p class="section-subtitle">Discover what makes devConf the premier developer conference of the year.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Workflow -->
+        <article class="bento-card bento-card--workflow">
+          <div class="card-visual">
+            <div class="workflow-notification">
+              <div class="workflow-notification__icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M8 4h8v8H8V4z" fill="#3b82f6"/>
+                  <path d="M4 12h8v8H4v-8z" fill="#60a5fa"/>
+                  <path d="M12 12h8v8h-8v-8z" fill="#2563eb"/>
+                </svg>
+              </div>
+              <div class="workflow-notification__content">
+                <h4 class="">Leaders</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Industry Leaders</h2>
+            <p class="card-description">Learn from top engineers & CTOs .</p>
+          </div>
+        </article>
+
+        <!-- Tech Ecosystem -->
+        <article class="bento-card bento-card--ecosystem">
+          <div class="card-visual">
+            <div class="hex-grid">
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--logo hex--react">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2" fill="#61dafb"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1" transform="rotate(120 12 12)"/></svg>
+              </div>
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--logo hex--python">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8 2 8 4 8 5v2h8V5c0-1 0-3-4-3z" fill="#3776ab"/><path d="M8 7C4 7 2 9 2 13v2c0 4 2 6 6 6h1v-2H8c-2 0-3-1-3-3v-2c0-2 1-3 3-3h8c2 0 3 1 3 3v1h2v-2c0-4-2-6-6-6H8z" fill="#3776ab"/><circle cx="9" cy="5" r="1" fill="#ffd43b"/><circle cx="15" cy="19" r="1" fill="#ffd43b"/></svg>
+              </div>
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--logo hex--kotlin">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 2h8l12 12-8 8L2 2z" fill="#7f52ff"/><path d="M10 2h12v8L10 2z" fill="#c711e1"/></svg>
+              </div>
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--logo hex--flutter">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l8 8-4 4L0 8l4-4z" fill="#54c5f8"/><path d="M12 12l8 8h-8l-4-4 4-4z" fill="#01579b"/><path d="M12 4l8 8-4 4-4-4 0-8z" fill="#29b6f6"/></svg>
+              </div>
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--empty"></div>
+              <div class="hex hex--empty"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Our Tech Ecosystem</h2>
+            <p class="card-description">Powering innovation through modern frameworks.</p>
+          </div>
+        </article>
+
+        <!-- AI Solutions -->
+        <article class="bento-card bento-card--ai">
+          <div class="card-visual">
+            <div class="ai-ripple">
+              <div class="ai-ripple__ring ai-ripple__ring--4"></div>
+              <div class="ai-ripple__ring ai-ripple__ring--3"></div>
+              <div class="ai-ripple__ring ai-ripple__ring--2"></div>
+              <div class="ai-ripple__ring ai-ripple__ring--1"></div>
+              <div class="ai-ripple__core">AI</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">AI Solutions</h2>
+            <p class="card-description">Smart tools that automate and enhance digital workflows.</p>
+          </div>
+        </article>
+
+        <!-- Analytics -->
+        <article class="bento-card bento-card--analytics">
+          <div class="card-visual">
+            <div class="analytics-chart">
+              <svg class="analytics-chart__grid" viewBox="0 0 280 120" preserveAspectRatio="none" aria-hidden="true">
+                <line x1="0" y1="30" x2="280" y2="30" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="0" y1="60" x2="280" y2="60" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="0" y1="90" x2="280" y2="90" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="70" y1="0" x2="70" y2="120" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="140" y1="0" x2="140" y2="120" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="210" y1="0" x2="210" y2="120" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              </svg>
+              <svg class="analytics-chart__line" viewBox="0 0 280 120" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#1d4ed8"/>
+                    <stop offset="100%" stop-color="#3b82f6"/>
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <path d="M 10 95 Q 60 90, 90 75 T 150 55 T 220 25 L 260 15" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" filter="url(#glow)"/>
+                <circle cx="260" cy="15" r="6" fill="#3b82f6" filter="url(#glow)"/>
+                <circle cx="260" cy="15" r="3" fill="#ffffff"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Analytics</h2>
+            <p class="card-description">Actionable insights from real-time data.</p>
+          </div>
+        </article>
+
+        <!-- Design -->
+        <article class="bento-card bento-card--design">
+          <div class="card-visual">
+            <div class="design-dialog">
+              <p class="design-dialog__title">Title Here</p>
+              <p class="design-dialog__desc">Alert description with auto layout!</p>
+              <div class="design-dialog__actions">
+                <button type="button" class="design-dialog__btn">Default</button>
+                <button type="button" class="design-dialog__btn design-dialog__btn--bold">Bold</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Design</h2>
+            <p class="card-description">Human-centered and visually engaging experiences.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  
+
+    
+
+      <!-- footer section according to the assignment requirment description -->
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="logo">
+            <img class="logopic" src="./assets/footer-logo.png" alt="logo pic" />
+          </div>
+
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 DevConf. All rights reserved.</p>
+        </div>
+      </footer>
+
+      
     </main>
   </body>
 </html>
