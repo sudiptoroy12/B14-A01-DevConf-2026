@@ -10,8 +10,18 @@ section{
 }
 
 
-body{
-    font-family: "Inter";
+
+body {
+
+  font-family: "Inter";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 img{
     width: 100%;
