@@ -12,5 +12,6 @@ Act as a senior Frontend Developer and UI/UX Designer.
 Create a premium "Why Attend DevConf 2026" section using HTML and Tailwind CSS.
 Design Requirements: Modern developer conference website style, Clean black/dark cards on a light background,Large rounded corners (24px-32px),Subtle blue glow effects,Use only external CSS files.
 
-Cursor prompt 4 :
+Cursor prompt 4 : Give the why attend devconf 2026 section screenshot picture that i found from chatgpt and tells cursor below prompts ->
+
 this is the design of dev conference 2026 website why attend devConf 2026 section. please create the website page with external css 
