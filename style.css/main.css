@@ -729,12 +729,19 @@ svg {
   .secure-sec{
     padding: 20px 10%;
   }
+  nav ul {
+    display: none;
+ }
 
 }
 
 @media (max-width: 600px) {
   .upgrade-app{
     grid-template-columns: repeat(1, 1fr);
+  }
+   .attend-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 20px;
   }
   .secure-sec{
     padding: 20px 22%;
@@ -770,5 +777,6 @@ svg {
     height: 18px;
   }
 }
+
 
 
