@@ -187,10 +187,11 @@ h2{
 
 
 .secure-sec{
-    padding: 20px 18%;
+    padding: 20px 20%;
 }
 .section-secure p{
     color: #575757;
+    
 }
 .section-secure h2{
     color: #0D1B2A;
@@ -238,6 +239,9 @@ h2{
     gap: 10px;
     padding: 25px 0px;   
     
+}
+.price-middle li{
+ font-size: 15px;
 }
 .text-color{
     color: rgba(255, 255, 255, 0.8);
